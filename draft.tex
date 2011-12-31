@@ -1,0 +1,53 @@
+% Clase
+\documentclass[11pt,a4paper,spanish,twoside]{book}
+
+% Órdenes auxiliares
+\input{inc/includes.tex}
+
+%Color blanco
+\definecolor{blanco}{rgb}{1,1,1}
+
+\usepackage{rotating}
+
+\begin{document}
+
+% Encabezado y pie
+\encabezado
+
+% Portada
+\portada{MobiCarta:}
+{Sistema basado en movilidad y NFC \\para la atención en restaurantes}
+{Diciembre de 2011}
+
+% Índice
+\tableofcontents
+
+%% INICIO DEL DOCUMETO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{OBJETIVOS}
+\input{objectives.tex}
+
+\chapter{MÉTODOS DE DESARROLLO}
+\input{development.tex}
+
+\chapter{MEDIOS A UTILIZAR}
+\input{resources.tex}
+
+\begin{thebibliography}{99}
+\bibitem{bib:RFID} D. Tapia, J. Cueli, O. García, J. Corchado, J. Bajo, A. 
+Saavedra. \\
+\emph{Identificación por Radiofrecuencia: Fundamentos y Aplicaciones}, 2007.
+\bibitem{bib:DHC} Software de gestión para restaurantes. \\
+    \url{http://www.datahousecompany.com.ar/restaurant.html}
+\bibitem{bib:vMenu} \emph{vMenu}, la carta digital en \emph{iPad}. \\
+    \url{http://www.vlooguides.com/vMenu.php}
+\bibitem{bib:Pay} Realización de pagos a través de dispositivos móviles. \\
+    \url{http://alberto-perez-ruiz.suite101.net/pronto-se-podra-pagar-con-el-
+movil-a44707} 
+\bibitem{bib:PI} J. P. Giraldo, C. A. Cortés; \emph{Los ciclos de vida de
+desarrollo},\\ ACOFI, 1900-8260, 2006.
+%\bibitem{bib:PUD} I. Jacobson, G. Booch, J. Rumbaugh; tr. por S. Sánchez et
+%al. \\
+%\emph{El proceso unificado de desarrollo de software}, Pearson, 2000.
+\end{thebibliography}
+
+\end{document}
